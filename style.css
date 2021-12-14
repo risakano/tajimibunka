@@ -1,4 +1,37 @@
 @charset "UTF-8";
+/*===============================================
+  仮設定部分　（index完成後に合わせる）
+=================================================*/
+
+.header {
+	background-color: #ffff;
+	width: 100vw;
+	height: 75px;
+	position: fixed;
+	top: 0;
+}
+
+.bn-cta {
+		width: 270px;
+		height: 53px;
+		position: absolute;
+		top: 75px;
+		right: 14.6vw;
+		background-color: #f0950c;
+	}
+	.bn-cta p {
+	color: white;
+	font-size: 13px;
+	text-align: center;
+	margin: 0 auto;
+	}
+
+
+	.footer {
+		background-color: #f0950c;
+		height: 500px;
+	}
+
 
 /*===============================================
  下層共通設定
@@ -25,7 +58,7 @@ body {
 
 	/* ホバー設定 */
 a {
-		display: inline-block;
+		display: inline;
 		font-size: 18px;
 		color: #4b4b4b;
 		line-height: 1.2;
@@ -113,7 +146,7 @@ a:active {
 	/* 小見出し */
 	h4 {
 		font-size: 23px;
-		margin: 10px 0 5px;
+		margin: 10px 0 15px 0;
 		padding: 0 0.5em;/*文字周りの余白*/
 		border-left: solid 5px #f0950c;/*左線（実線 太さ 色）*/
 	}
@@ -126,13 +159,16 @@ a:active {
 		font-size: 20px;
 		font-weight: bold;
 		padding-bottom: 0px;
+		padding-top: 25px;
 	}
-	h5:before {
+	.shikaku:before {
+		border-left: 0px;
 		content: '■';
 		color: #fceee1;
 		margin-right: 8px;
 		font-size: 0.8em; /*iconサイズ調整*/
 	}
+
 
 
 	/* 基本文 */
@@ -151,16 +187,25 @@ a:active {
 	}
 	/* 本文（中） */
 	p.large {
+		font-weight: bold;
 		font-size: 20px;
 		padding-bottom: 0px;
 	}
 
 
 /* 下層メインコンテンツ */
-#main {
+.main {
 	width: 70.3vw;	/* width: 960px; */
 	margin: 40px auto;
 	margin-bottom: 100px;
+}
+	/*編みかけ部分*/
+ .wrap {
+	background-color: #fceee1;
+	border-radius: 5px;
+	padding: 20px 40px;
+	margin: 15px;
+	max-width: 650px;
 }
 
 .m-wrap {
@@ -172,10 +217,15 @@ a:active {
 	padding-top: 20px;
 }
 
+.text-wrap {
+	margin-top: 25px;
+}
+
+
 /*===============================================
  　サイトマップ　saitemap.html
 =================================================*/
-#mousikomi,#tajitomo,#main {
+#mousikomi,#tajitomo,.main,#koutsuaccess {
 	/* アンカーリンク遷移時ヘッダーの高さ分を指定 */
   padding-top: 75px;
   margin-top: -75px;
@@ -269,7 +319,9 @@ th {
 	text-align: center;
 	margin: 30px 0;
 }
-
+#form_btn1 p {
+	color: #fff;
+}
 
 #form_btn1 {
 	display: inline-block;
@@ -295,6 +347,7 @@ th {
   transform: translateY(4px);/*下に動く*/
   border-bottom: none;/*線を消す*/
 }
+
 
 .ad {
 	display: block;
@@ -331,38 +384,36 @@ th {
 }
 
 
-
 /*===============================================
- 仮部分（index 完成後に流用）
+	 　会員制度　tajitomo.html
 =================================================*/
-	.header {
-		background-color: #ffff;
-		width: 100vw;
-		height: 75px;
-		position: fixed;
-		top: 0;
-	}
-
-	.bn-cta {
-		width: 270px;
-		height: 53px;
-		position: absolute;
-		top: 75px;
-		right: 14.6vw;
-		background-color: #f0950c;
-	}
-	.bn-cta p {
-	color: white;
-	font-size: 13px;
-	text-align: center;
-	margin: 0 auto;
-	}
+#tajitomo h5 {
+	color: #F57F00;
+}
 
 
-	.footer {
-		background-color: #f0950c;
-		height: 500px;
-	}
+
+.qaContainer dt {
+padding: 10px 10px 10px 35px;
+border-radius: 5px;
+background: #fceee1;
+text-indent: -25px;
+}
+.qaContainer dt:before {
+content: "Q.";
+font-weight: bold;
+margin-right: 7px;
+}
+.qaContainer dd {
+margin: 20px 10px 40px 35px;
+text-indent: -25px;
+}
+.qaContainer dd:before {
+content: "A.";
+color: #b41f02;
+font-weight: bold;
+margin-right: 7px;
+}
 
 
 
