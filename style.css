@@ -47,14 +47,11 @@ body {
 	background-color: #fffffe;
 	}
 
-
 	section {
 		margin: 0 auto;
 	}
 
-	.red {
-		color: #b41f02;
-	}
+
 
 	/* ホバー設定 */
 a {
@@ -102,11 +99,6 @@ a:active {
 
 	}
 
-	h3, h4 {
-
-
-	}
-
 
 	/* メニュータイトル */
 	#m-ttl {
@@ -126,8 +118,6 @@ a:active {
 		background-color: #fceee1;
 		border-bottom: solid 2px #e29d5d;
 	}
-
-
 
 	/* 中見出し */
 	h3 {
@@ -151,16 +141,13 @@ a:active {
 		border-left: solid 5px #f0950c;/*左線（実線 太さ 色）*/
 	}
 
-　li:first-child {　 	/* 小見出しの１つ目だけ余白を大きく*/
-		margin-top: 35px;
-	}
-
 	h5 {
 		font-size: 20px;
 		font-weight: bold;
 		padding-bottom: 0px;
 		padding-top: 25px;
 	}
+
 	.shikaku:before {
 		border-left: 0px;
 		content: '■';
@@ -169,6 +156,10 @@ a:active {
 		font-size: 0.8em; /*iconサイズ調整*/
 	}
 
+ /* 赤字 */
+	.red {
+		color: #b41f02;
+	}
 
 
 	/* 基本文 */
@@ -217,39 +208,56 @@ a:active {
 
 .s-wrap {
 	margin-top: 20px;
-	padding-top: 20px;
+	padding-bottom: 30px;
 }
 
 .text-wrap {
-	margin-top: 25px;
+	margin-top: 23px;
 }
+/*２カラム*/
+.two-column {
+  display: flex;
+  flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+}
+.column {
+  width: 100%;
+}
+
+	@media (min-width: 1024px) {
+	  .column {
+	    width: calc(50% - 16.18px / 2)
+	  }
+	}
 
 
 /*===============================================
- 　サイトマップ　saitemap.html
+ 　サイトマップ　sitemap.html
 =================================================*/
 #mousikomi,#tajitomo,.main,#koutsuaccess {
 	/* アンカーリンク遷移時ヘッダーの高さ分を指定 */
   padding-top: 75px;
   margin-top: -75px;
 }
-.saitemap h4 {
+.sitemap h4 {
 	border-left: none;
 	padding-top: 20px;
 	margin: 20px 0;
   border-top: 2px dotted #fceee1;
 }
 
-.saitemap p {
+.sitemap p {
 	padding: 0;
 	font-size: 23px;
 }
 
-.saitemap h4 {
+.sitemap h4 {
 	margin-left: -34px; 	/*icon位置調整 */
 }
 
-.saitemap h4:before {
+.sitemap h4:before {
 	content: '■';
 	color: #fceee1;
 	margin-right: 8px;
@@ -434,7 +442,19 @@ margin-right: 7px;
   color:#4b4b4b;
 }
 
+/*===============================================
+	交通アクセス　access.html
+=================================================*/
+#access td ,#access th {
+ padding: 5px 10px;
+}
+.col-l {
+ padding-top: 20px;
+}
 
+.col-r {
+	text-align: center;
+}
 
 
 
@@ -450,6 +470,10 @@ PC : 画面の横幅が769px以上
 		display: none;
 	}
 }
+ .tel {
+	width: 650px;
+}
+
 
 
 
@@ -473,10 +497,10 @@ Smartphone :  画面の横幅が640pxまで
 =================================================*/
 @media screen and (max-width:640px){
 	h2 {
-		font-size: 25px;
+		font-size: 24px;
 	}
 	h3 {
-		font-size: 23px;
+		font-size: 20px;
 		padding: 10px 0 10px 0;
     margin-left: -8px;
 	}
@@ -491,8 +515,17 @@ Smartphone :  画面の横幅が640pxまで
 	 font-size: 18px;
  	}
 	p {
-		font-size: 16px;
-		
+		font-size: 15px;
+	}
+	p.large{
+		font-size: 18px;
+		letter-spacing: 0.01em;
+	}
+	.s-wrap {
+		padding-bottom: 15px;
+	}
+	.m-wrap {
+		margin-bottom: 15px;
 	}
 	.small {
 		font-size: 12px;
@@ -500,6 +533,7 @@ Smartphone :  画面の横幅が640pxまで
 	.main {
 		width: 90.5vw;
 	}
+
 	#m-ttl {
 		padding-top: 27px;
 		padding-left: 7vw;
@@ -531,3 +565,34 @@ Smartphone :  画面の横幅が640pxまで
 		font-size: 13px;
 		padding: 9px;
 	}
+
+
+	/* sitemap-------------------- */
+	.sitemap h4 {
+		margin-left: 0px;
+	}
+	.sitemap p {
+		margin-left: 16px;
+	}
+
+	/* sitemap-------------------- */
+	.tel {
+		width: 100%;
+	}
+
+ /* access-------------------- */
+	#access h2 {
+		font-size: 18px;
+		line-height: 2.2;
+		letter-spacing: 0.02em;
+	}
+	iframe {
+		width: 100%;
+	}
+ .col-r {
+	 padding-top: 5px;
+	 width: 100%;
+ }
+ .col-l {
+	 padding-top: 0px;
+ }
