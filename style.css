@@ -199,7 +199,7 @@ a:active {
 	border-radius: 5px;
 	padding: 20px 40px;
 	margin: 15px;
-	max-width: 650px;
+	/* max-width: 680px; */
 }
 
 .m-wrap {
@@ -212,7 +212,8 @@ a:active {
 }
 
 .text-wrap {
-	margin-top: 23px;
+	margin-top: 20px;
+	padding-bottom: 20px;
 }
 /*２カラム*/
 .two-column {
@@ -236,7 +237,7 @@ a:active {
 /*===============================================
  　サイトマップ　sitemap.html
 =================================================*/
-#mousikomi,#tajitomo,.main,#koutsuaccess {
+#mousikomi,#tajitomo,.main,#koutsuaccess,#access,#news_1 {
 	/* アンカーリンク遷移時ヘッダーの高さ分を指定 */
   padding-top: 75px;
   margin-top: -75px;
@@ -359,7 +360,6 @@ th {
   border-bottom: none;/*線を消す*/
 }
 
-
 .ad {
 	display: block;
 	margin: 0 auto;
@@ -456,7 +456,52 @@ margin-right: 7px;
 	text-align: center;
 }
 
+/*===============================================
+　お知らせ　news.html
+=================================================*/
+.day {
+	display: inline;
+	padding: 5px;
+	font-size: 5px;
+	color: #fff;
+	background-color: #b41f02;
+	border-radius: 5px;
+}
+.mark {
+	font-size: 15px;
+	color: #fff;
+	background-color: #F57F00;
+	padding: 8px;
+	border-radius: 5px;
+	letter-spacing: 0.02em;
+	margin-bottom: 5px;
 
+}
+ul {
+	list-style: square;
+	padding-top: 10px;/*リスト上の余白*/
+  padding-bottom: 10px;/*リスト下の余白*/
+	padding-left: 40px;
+}
+li {
+	font-size: 18px;
+  color: #4b4b4be0;
+  letter-spacing: 0.12em;
+	padding: 3px;
+}
+
+.asterisk ul {
+
+
+}
+.asterisk li {
+	list-style: none;
+	font-size: 13px;
+}
+
+.asterisk li:before {
+	content:"※"
+}
 
 
 
@@ -473,6 +518,8 @@ PC : 画面の横幅が769px以上
  .tel {
 	width: 650px;
 }
+
+
 
 
 
@@ -527,6 +574,10 @@ Smartphone :  画面の横幅が640pxまで
 	.m-wrap {
 		margin-bottom: 15px;
 	}
+	.wrap {
+		margin: 15px 0px;
+		padding: 20px 5px 20px 10px;
+	}
 	.small {
 		font-size: 12px;
 	}
@@ -575,7 +626,7 @@ Smartphone :  画面の横幅が640pxまで
 		margin-left: 16px;
 	}
 
-	/* sitemap-------------------- */
+ /* sitemap-------------------- */
 	.tel {
 		width: 100%;
 	}
@@ -596,3 +647,19 @@ Smartphone :  画面の横幅が640pxまで
  .col-l {
 	 padding-top: 0px;
  }
+
+  /* news-------------------- */
+	#news ul {
+		padding-top: 10px;/*リスト上の余白*/
+	  padding-bottom: 10px;/*リスト下の余白*/
+		padding-left: 15px;
+	}
+	#news li {
+		font-size: 15px;
+	  letter-spacing: 0.08em;
+		line-height: 1.4;
+		padding: 5px 3px 5px 0px;
+	}
+	.mark {
+		padding: 5px;
+	}
