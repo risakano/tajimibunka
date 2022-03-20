@@ -521,6 +521,80 @@ li {
 	border-bottom: 1px solid #f9e1c9;
 }
 
+
+/*===============================================
+ 　イベント情報　event年月日.html
+=================================================*/
+#event-info.main {
+  display: flex;
+}
+
+.event-photo img {
+  width: 100%;
+  height: auto;
+  max-width: 1000px;
+}
+
+#event-info .m-wrap {
+  margin-left: 30px;
+}
+
+.status_area {
+  overflow: hidden;
+}
+.status_area span {
+  display: inline-block;
+  font-size: 0.81em;
+  line-height: 2.0em;
+  padding: 6px 5px;
+  text-align: center;
+  margin: 0 5px 5px 0;
+  min-width: 20%;
+}
+.status_genre {
+  border: 1px solid #f0950c;
+  color: #f0950c;
+}
+.status_now {
+  border: 1px solid #f0950c;
+  background: #f0950c;
+  color: #ffffff;
+}
+
+/* 中見出し */
+#event-info h3 {
+  margin: 0; 	/*icon非表示分位置調整 */
+}
+#event-info h3:before {
+  display: none; /*icon非表示 */
+}
+
+#event-info .s-wrap {
+  padding: 0;
+}
+
+#event-info table {
+  width: 100%;
+	border-collapse: collapse;
+  border-spacing: 0;
+}
+#event-info th {
+	width: 25%;
+	text-align: center;
+	font-size: 0.94em;
+	color: #4b4b4b;
+  vertical-align: middle;
+  background: #fceee1;
+	border: 1px solid #f9e1c9;
+}
+#event-info td {
+	border: 1px solid #f9e1c9;
+  padding: 25px 20px;
+	font-size: 0.81em;
+	color: #878787;
+ }
+
+
 /*===============================================
 PC : 画面の横幅が769px以上
 =================================================*/
@@ -677,3 +751,28 @@ Smartphone :  画面の横幅が640pxまで
 	.mark {
 		padding: 5px;
 	}
+	
+   /* event年月日-------------------- */
+  	 #event-info.main {
+	     display: block;
+	 }
+	 .event-photo {
+		 width: 100%;
+		 margin-bottom: 30px;
+   	 }
+	 .event-photo img {
+		 width: 100%;
+	 }
+  	 #event-info h3 {
+		 text-align: center;
+  	 }
+  	 #event-info .m-wrap {
+		 margin-left: 0px;
+	 }
+	 #event-info th {
+		 width: 100%;
+   	 }
+  	 #event-info a {
+		 font-size: 0.94em;
+   	 }
+ }
