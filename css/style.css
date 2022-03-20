@@ -2,7 +2,9 @@
 /*===============================================
   仮設定部分　（index完成後に合わせる）
 =================================================*/
-
+html {
+	font-size: 62.5%;
+}
 .header {
 	background-color: #ffff;
 	width: 100vw;
@@ -21,7 +23,7 @@
 	}
 	.bn-cta p {
 	color: white;
-	font-size: 13px;
+	font-size: 1.3rem;
 	text-align: center;
 	margin: 0 auto;
 	}
@@ -51,12 +53,14 @@ body {
 		margin: 0 auto;
 	}
 
-
+img {
+	width: 100%;
+}
 
 	/* ホバー設定 */
 a {
 		display: inline;
-		font-size: 18px;
+		font-size: 1.8rem;
 		color: #4b4b4b;
 		line-height: 1.2;
 		border-bottom: solid 1px #4b4b4b;
@@ -88,7 +92,13 @@ a:active {
 	border-bottom: none;
 }
 
-
+iframe {
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 15px;
+	width: 100%;
+	height: 450px;
+}
 
 	/*見出し共通設定 */
 	h2, h3, h4 {
@@ -114,14 +124,14 @@ a:active {
 	h2 {
 		display: inline;
 		padding: 0.2em;/*文字周りの余白*/
-		font-size: 27px;
+		font-size: 2.7rem;
 		background-color: #fceee1;
 		border-bottom: solid 2px #e29d5d;
 	}
 
 	/* 中見出し */
 	h3 {
-		font-size: 25px;
+		font-size: 2.5rem;
 		padding: 25px 0 10px 0;
 		margin-left: -34px; 	/*icon位置調整 */
 	}
@@ -135,17 +145,21 @@ a:active {
 
 	/* 小見出し */
 	h4 {
-		font-size: 23px;
+		font-size: 2.3rem;
 		margin: 10px 0 15px 0;
 		padding: 0 0.5em;/*文字周りの余白*/
 		border-left: solid 5px #f0950c;/*左線（実線 太さ 色）*/
 	}
 
 	h5 {
-		font-size: 20px;
+		font-size: 2.0rem;
 		font-weight: bold;
 		padding-bottom: 0px;
 		padding-top: 25px;
+	}
+
+	h6 {
+		font-size: 2.0rem;
 	}
 
 	.shikaku:before {
@@ -164,25 +178,25 @@ a:active {
 
 	/* 基本文 */
 	p {
-		font-size: 18px;
+		font-size: 1.8rem;
 		color: #4b4b4be0;
 		letter-spacing: 0.12em;
-		padding: 10px 14px;
+		padding: 10px 6px;
 
 	}
 	/* 本文（小） */
 	p.small {
-		font-size: 13px;
+		font-size: 1.3rem;
 		padding: 3px 14px;
 	}
 	.small {
-		font-size: 15px;
+		font-size: 1.5rem;
 
 	}
 	/* 本文（中） */
 	p.large {
 		font-weight: bold;
-		font-size: 20px;
+		font-size: 2.0rem;
 		padding-bottom: 0px;
 	}
 
@@ -227,11 +241,50 @@ a:active {
   width: 100%;
 }
 
+/*ボタンデザイン*/
+.btn {
+	color: #fff;
+	text-align: center;
+	letter-spacing: 0.3em;
+	line-height: 3;
+	background: #b41f02;
+	padding: 0 20px;
+	height: 45px;
+	border-radius: 10px;
+	border-bottom: solid 4px #580f01;
+	font-size: 1.3rem;
+	font-weight: bold;
+	display: block;
+	margin: 18px auto;
+	min-width: 150px;
+	max-width: 180px;
+	transition: all 0.25s;
+}
+.btn:hover{
+  opacity: 0.6;
+}
+.btn:active {
+  /*ボタンを押したとき*/
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);/*下に動く*/
+  border-bottom: none;/*線を消す*/
+}
+
+}
 	@media (min-width: 1024px) {
 	  .column {
 	    width: calc(50% - 16.18px / 2)
 	  }
 	}
+	@media (max-width: 767px) {
+		iframe {
+			height: 250px;
+		}
+		p.small {
+			padding: 3px 10px;
+		}
+	}
+
 
 
 /*===============================================
@@ -251,7 +304,7 @@ a:active {
 
 .sitemap p {
 	padding: 0;
-	font-size: 23px;
+	font-size: 2.3rem;
 }
 
 .sitemap h4 {
@@ -268,7 +321,7 @@ a:active {
 	padding-top: 20px;
 	margin: 20px 0;
   border-top: 2px dotted #fceee1;
-	font-size: 23px;
+	font-size: 2.3rem;
 
 }
 
@@ -285,7 +338,7 @@ table {
 th {
 	width: 30%;
 	text-align: center;
-	font-size: 15px;
+	font-size: 1.5rem;
 	color: #4b4b4b;
   vertical-align: middle;
   background: #fceee1;
@@ -294,14 +347,13 @@ th {
  td {
 	border: 1px solid #f9e1c9;
   padding: 25px 20px;
-	font-size: 13px;
+	font-size: 1.3rem;
 	color: #878787;
  }
 
-
  input {
 	 color: #4b4b4b;
-	 font-size: 14px;
+	 font-size: 1.4rem;
  }
 
  .input_s {
@@ -345,7 +397,7 @@ th {
 	height: 46px;
 	border-radius: 10px;
 	border-bottom: solid 4px #580f01;
-	font-size: 16px;
+	font-size: 1.6rem;
 	font-weight: bold;
 	color: #fff;
 	margin: 0 10px 0 0;
@@ -364,7 +416,7 @@ th {
 	display: block;
 	margin: 0 auto;
 	text-align: center;
-	font-size: 2px;
+	font-size: 0.2rem;
 	color: #ccc;
 	font-weight: lighter;
 
@@ -382,6 +434,130 @@ th {
 	color: #ccc;
 	border-bottom: none;
 }
+/*===============================================
+ 　施設一覧　institution-index.html
+=================================================*/
+/* カラムの設定 */
+.content_a {
+	margin-top: 15px;
+	width: 40%;
+}
+.content_b {
+	width: 55%;
+}
+.content_b img {
+	margin-top: 15px;
+}
+.content_c {
+	width: 50%;
+	text-align: center;
+}
+
+@media (max-width: 767px) {
+	.content_a,.content_b,.content_c {
+		width: 100%;
+	}
+	#institution-index .text-wrap {
+		margin-top: 0;
+	}
+	#institution-index .sp-only {
+		padding-top: 0;
+	}
+}
+/* 表の設定 */
+#institution-index table {
+	margin-top: 0;
+}
+#institution-index td {
+	border-top: 1px dotted #f9e1c9;
+	border-bottom: 1px dotted #f9e1c9;
+	border-left: none;
+	border-right: none;
+}
+#institution-index th {
+	width: 45%;
+	padding: 2px 5px;
+}
+#institution-index .shikaku:before {
+	color: #f7c08d;
+	margin-right: -5px;
+	font-size: 0.8em; /*iconサイズ調整*/
+}
+
+#shiyou th,#shiyou td {
+	border: 1px solid #f9e1c9
+
+}
+#shiyou th {
+	width: 25%;
+	letter-spacing: 4px;
+}
+
+#mini table {
+width: 70%;
+margin: 0 0 0 10px;
+padding: 10px;
+border: 1px solid #c5c3c3
+border-collapse: collapse;
+border-spacing: 0;
+}
+#mini th,#mini td{
+text-align: center;
+padding: 10px;
+color: #4b4b4b;
+vertical-align: middle;
+background: #ffff;
+border: 1px solid #c5c3c3;
+}
+#mini th{
+font-size: 11px;
+}
+
+#mini td {
+font-size: 1.5rem;
+color: #878787;
+width: 10%;
+
+}
+.orenge {
+	color: #f0950c;
+}
+
+
+#largehall, #smallhall, #tennzishitsu_a, #tennzishitsu_b, #daikaigishitsu, #rennsyuushitsu1, #rennsyuushitsu2, #rennsyuushitsu3, #rennsyuushitsu4, #washitsu {
+	/* アンカーリンク遷移時ヘッダーの高さ分を指定 */
+  padding-top: 75px;
+  margin-top: -75px;
+}
+
+@media (max-width: 767px) {
+
+	#institution-index th {
+		padding: 0;
+		width: 100%;
+	}
+	#shiyou th {
+		width: 100%;
+		text-align: center;
+	}
+   #mini table {
+		 display: table;
+		 margin-left: 0;
+		 width: 100%;
+	 }
+	 #mini tr {
+		 display: table-row;
+	 }
+	 #mini th, #mini td {
+		 display: table-cell;
+		 width: 30%;
+	 }
+	  #mini td {
+			width: 10%;
+	}
+}
+
+
 
 /*===============================================
  　刊行物　tabunnet.html
@@ -392,6 +568,13 @@ th {
 	margin-right: 8px;
 	font-size: 0.8em; /*iconサイズ調整*/
 	border: none;
+}
+#tabunnet ul {
+	margin-left: 5px;
+	list-style: none;
+}
+#tabunnet li a{
+	font-size: 14px;
 }
 
 
@@ -425,8 +608,8 @@ margin-right: 7px;
 }
 
 #mousikomi #form_btn1 {
-	height: 62px;
-	line-height: 1.2;
+ height: 62px;
+ line-height: 1.2;
 }
 #mousikomi table{
  border-collapse:collapse;
@@ -435,11 +618,11 @@ margin-right: 7px;
  width: 650px;
 }
 #mousikomi td,th{
-  border:1px solid #fceee1;
-  padding:12px;
+ border:1px solid #fceee1;
+ padding:12px;
 }
 #mousikomi th{
-  color:#4b4b4b;
+ color:#4b4b4b;
 }
 
 /*===============================================
@@ -448,11 +631,11 @@ margin-right: 7px;
 #access td ,#access th {
  padding: 5px 10px;
 }
-.col-l {
+#access .col-l {
  padding-top: 20px;
 }
 
-.col-r {
+#access .col-r {
 	text-align: center;
 }
 
@@ -462,13 +645,13 @@ margin-right: 7px;
 .day {
 	display: inline;
 	padding: 5px;
-	font-size: 5px;
+	font-size: 0.5rem;
 	color: #fff;
 	background-color: #b41f02;
 	border-radius: 5px;
 }
 .mark {
-	font-size: 15px;
+	font-size: 1.5rem;
 	color: #fff;
 	background-color: #F57F00;
 	padding: 8px;
@@ -484,7 +667,7 @@ ul {
 	padding-left: 40px;
 }
 li {
-	font-size: 18px;
+	font-size: 1.8rem;
   color: #4b4b4be0;
   letter-spacing: 0.12em;
 	padding: 3px;
@@ -496,7 +679,7 @@ li {
 }
 .asterisk li {
 	list-style: none;
-	font-size: 13px;
+	font-size: 1.3rem;
 }
 
 .asterisk li:before {
@@ -510,16 +693,143 @@ li {
 #service table {
 
 }
+#service table a {
+	font-size: 1.5rem;
+}
 
 #service td {
 	border: 1px solid #f9e1c9;
   padding: 25px 20px;
-	font-size: 13px;
+	font-size: 1.5rem;
 	color: #4b4b4be0;
  }
+#service td .small {
+	font-size: 1.3rem;
+}
 #service th {
 	border-bottom: 1px solid #f9e1c9;
+	font-size: 1.8rem;
 }
+
+/*===============================================
+　ご利用の流れ　use.html
+=================================================*/
+#use_1, #use_2, #use_3, #use_4, #use_5, #use_6, #use_7, #use_8, #use_9, #use_10 {
+  padding-top: 75px;
+  margin-top: -75px;
+}
+
+
+#use ol {
+ list-style-type: decimal;
+ overflow: hidden;
+ padding-left: 20px;
+}
+li::marker {
+  color: #F57F00;
+}
+
+#page_link li {
+	font-size: 1.4rem;
+	text-align: center;
+	margin-right: 40px;
+	float: left;
+}
+#page_link a {
+	font-size: 1.4rem;
+}
+
+#use .btn {
+	max-width: 260px;
+	margin-top: 30px;
+}
+#use .kasen {
+	border-top: none;
+	border-bottom: 2px dotted #fceee1;
+}
+.yoyakushisutemu {
+	letter-spacing: 2px;
+	margin-bottom: 30px;
+}
+.center {
+	text-align: center;
+	margin: 0 auto;
+}
+#use .tel {
+	width: auto;
+	margin-top: 20px;
+}
+
+.cancel {
+	width: 90%;
+	margin: 0 auto;
+	margin-bottom: 30px;
+}
+.cancel td {
+ color: #4b4b4b;
+ padding: 15px 20px;
+ font-size: 1.5rem;
+}
+.cancel th {
+ border: 2px solid #f9e1c9;
+ background-color: #F57F00;
+ color: #ffff;
+}
+
+.fee_d {
+	text-align: center;
+}
+.head th:nth-child(2) {
+	background-color:  #b41f02;
+	color: ;
+}
+#use_5 h6 {
+	font-size: 2rem;
+	font-weight: bold;
+	margin-bottom: 10px;
+	margin-left: 60px;
+}
+#use_9 .wrap {
+	text-align: center;
+}
+#use_9 .text-wrap {
+	text-align: left;
+	margin: 0 20px;
+}
+
+#btn2 .btn {
+	max-width: 500px;
+  font-size: 1.8rem;
+  line-height: 2.6;
+	letter-spacing: 0.2em;
+  padding: 8px 20px;
+  height: 65px;
+	border: solid 2px #b41f02;
+	background-color: #ffff;
+	color: #b41f02;
+}
+#btn2 .btn p {
+	margin-top: 0px;
+}
+
+#use_10 .wrap {
+	text-align: center;
+	padding-bottom: 38px;
+}
+#use_10 th, #use_10 td {
+	background-color: #ffff;
+	border: 1px solid #fceee1;
+
+}
+
+#use_10 .btn {
+	max-width: 430px;
+	margin-top: 50px;
+}
+
+
+
+
 
 
 /*===============================================
@@ -559,10 +869,10 @@ Smartphone :  画面の横幅が640pxまで
 =================================================*/
 @media screen and (max-width:640px){
 	h2 {
-		font-size: 24px;
+		font-size: 2.4rem;
 	}
 	h3 {
-		font-size: 20px;
+		font-size: 2rem;
 		padding: 10px 0 10px 0;
     margin-left: -8px;
 	}
@@ -571,16 +881,16 @@ Smartphone :  画面の横幅が640pxまで
 		font-size: 1.2em;
 	}
 	h4 {
-		 font-size: 19px;
+		 font-size: 1.9rem;
 	}
   h5 {
-	 font-size: 18px;
+	 font-size: 1.8rem;
  	}
 	p {
-		font-size: 15px;
+		font-size: 1.5rem;
 	}
 	p.large{
-		font-size: 18px;
+		font-size: 1.8rem;
 		letter-spacing: 0.01em;
 	}
 	.s-wrap {
@@ -594,10 +904,13 @@ Smartphone :  画面の横幅が640pxまで
 		padding: 20px 5px 20px 10px;
 	}
 	.small {
-		font-size: 12px;
+		font-size: 1.2rem;
 	}
 	.main {
 		width: 90.5vw;
+	}
+	.pc-only {
+		display: none;
 	}
 
 	#m-ttl {
@@ -610,7 +923,7 @@ Smartphone :  画面の横幅が640pxまで
 	 width: 45vw;
  }
  	.bn-cta p {
-		font-size: 10px;
+		font-size: 1rem;
 	}
 
 	table,tbody,tr,td,th {
@@ -628,7 +941,7 @@ Smartphone :  画面の横幅が640pxまで
 		padding: 5px;
 	}
 	#mousikomi th {
-		font-size: 13px;
+		font-size: 1.3rem;
 		padding: 9px;
 	}
 
@@ -648,7 +961,7 @@ Smartphone :  画面の横幅が640pxまで
 
  /* access-------------------- */
 	#access h2 {
-		font-size: 18px;
+		font-size: 1.8rem;
 		line-height: 2.2;
 		letter-spacing: 0.02em;
 	}
@@ -670,7 +983,7 @@ Smartphone :  画面の横幅が640pxまで
 		padding-left: 15px;
 	}
 	#news li {
-		font-size: 15px;
+		font-size: 1.5rem;
 	  letter-spacing: 0.08em;
 		line-height: 1.4;
 		padding: 5px 3px 5px 0px;
@@ -678,5 +991,50 @@ Smartphone :  画面の横幅が640pxまで
 	.mark {
 		padding: 5px;
 	}
-	
+
+	/* use-------------------- */
+	.center {
+		margin: 5px auto;
+	}
+
+	#use_5 table, #use_5 tr {
+		width: 100%;
+		display: table;
+
+	}
+	#use_5 th, #use_5 td {
+		display: table-cell;
+		width: 50%;
+		text-align: center;
+	}
+	#use_5 h6 {
+		margin: 0 auto;
+		margin-bottom: 4px;
+		text-align: center;
+	}
+ #use li {
+	 font-size: 1.5rem;
  }
+	#use ul {
+		padding-left: 20px;
+
+	}
+
+	#use_9 .text-wrap {
+		margin: 0 auto;
+	}
+
+	#use_9 h3 {
+		letter-spacing: 0em;
+	}
+	#btn2 .btn {
+  	line-height: 1.6;
+  	padding: 8px 20px;
+  	height: 80px;
+		margin-top: 0px;
+  }
+	#use_10 .btn2 p{
+		height: 65px;
+		padding-top: 10px;
+		line-height: 1.6;
+	}
