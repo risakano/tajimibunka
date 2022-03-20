@@ -527,6 +527,7 @@ li {
 =================================================*/
 #event-info.main {
   display: flex;
+  padding-top:25px;
 }
 
 .event-photo img {
