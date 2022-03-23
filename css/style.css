@@ -437,6 +437,30 @@ th {
 /*===============================================
  　施設一覧　institution-index.html
 =================================================*/
+/* フロア図の設定 */
+#foor-zu h5.floortitle {
+	width: 90%;
+    font-size: 12px;
+    line-height: 20px;
+    border-top: 1px solid #f6c08d;
+    border-bottom: 1px solid #f6c08d;
+    padding: 3px 5px 3px 5px;
+    color: #333;
+}
+#foor-zu h5.floortitle:nth-child(2) {
+	border-top: none;
+}
+.floortitle .btn {
+	margin: 18px auto 0px 0px;
+}
+
+#foor-zu {
+	margin-top: 89px;
+}
+.reverse-row-order .content_b img {
+	margin-top: 82px;
+}
+
 /* カラムの設定 */
 .content_a {
 	margin-top: 15px;
@@ -454,15 +478,7 @@ th {
 }
 
 @media (max-width: 767px) {
-	.content_a,.content_b,.content_c {
-		width: 100%;
-	}
-	#institution-index .text-wrap {
-		margin-top: 0;
-	}
-	#institution-index .sp-only {
-		padding-top: 0;
-	}
+
 }
 /* 表の設定 */
 #institution-index table {
@@ -530,32 +546,8 @@ width: 10%;
   margin-top: -75px;
 }
 
-@media (max-width: 767px) {
 
-	#institution-index th {
-		padding: 0;
-		width: 100%;
-	}
-	#shiyou th {
-		width: 100%;
-		text-align: center;
-	}
-   #mini table {
-		 display: table;
-		 margin-left: 0;
-		 width: 100%;
-	 }
-	 #mini tr {
-		 display: table-row;
-	 }
-	 #mini th, #mini td {
-		 display: table-cell;
-		 width: 30%;
-	 }
-	  #mini td {
-			width: 10%;
-	}
-}
+
 
 
 
@@ -586,6 +578,7 @@ width: 10%;
 }
 
 .qaContainer dt {
+font-size: 1.8rem;
 padding: 10px 10px 10px 35px;
 border-radius: 5px;
 background: #fceee1;
@@ -597,6 +590,7 @@ font-weight: bold;
 margin-right: 7px;
 }
 .qaContainer dd {
+font-size: 1.8rem;
 margin: 20px 10px 40px 35px;
 text-indent: -25px;
 }
@@ -1079,4 +1073,82 @@ Smartphone :  画面の横幅が640pxまで
 }
 #event .pc-only {
 	display: none;
+}
+
+
+/* institution-index-------------------- */
+.content_a,.content_b,.content_c {
+	width: 100%;
+}
+#institution-index .text-wrap {
+	margin-top: 0;
+}
+#institution-index .sp-only {
+	padding: 5px;
+}
+
+
+#institution-index th {
+	padding: 0;
+	width: 100%;
+}
+
+#institution-index td {
+	padding: 10px 0px;
+}
+
+#shiyou th {
+	width: 100%;
+	text-align: center;
+}
+ #mini table {
+	 display: table;
+	 margin-left: 0;
+	 width: 100%;
+ }
+ #mini tr {
+	 display: table-row;
+ }
+ #mini th, #mini td {
+	 display: table-cell;
+	 width: 30%;
+ }
+	#mini td {
+		width: 10%;
+}
+
+/* フロア図の設定 */
+#foor-zu h5.floortitle {
+	width: 100%;
+		font-size: 12px;
+		line-height: 20px;
+		border-top: 1px solid #f6c08d;
+		border-bottom: 1px solid #f6c08d;
+		padding: 3px 5px 3px 5px;
+		color: #333;
+}
+#foor-zu h5.floortitle:nth-child(2) {
+	border-top: none;
+}
+.floortitle .btn {
+	margin: 10px auto;
+}
+
+#foor-zu {
+	margin-top: 0px;
+}
+.reverse-row-order .content_b img {
+	margin-top: 0px;
+}
+#foor-zu td {
+ padding: 6px 14px;
+ font-size: 1.3rem;
+}
+.reverse-row-order {
+flex-direction: column-reverse;
+}
+
+
+
+
 }
