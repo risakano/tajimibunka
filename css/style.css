@@ -827,26 +827,42 @@ li::marker {
 =================================================*/
 .all_event h5 {
 	color: #333;
-	font-size: 2.3rem;
-	margin-bottom: 20px;
+	font-size: 2.0rem;
+	margin-bottom: 30px;
 }
 .all_event dl dd {
 	margin-top: -1.9em;
 	padding: 0 0 10px 10.5em;
 	text-indent: -1em;
+	font-size: 1.4rem;
 }
 .all_event dl {
 	margin-left: 20px;
 }
+#event table {
+  border-collapse: separate;
+  border-spacing: 10px 20px;
+
+}
+
 #event dt {
 	color: #3a3838c7;
 }
 
 #event td {
 	border: none;
-	border-bottom: 1px dotted #fceee1;;
+	border-bottom: 1px dotted #fceee1;
+	padding-right: 0;
 }
-
+#event td .btn {
+	margin-top: 30px;
+}
+.tagu {
+	color: #BE5152;
+	border-radius: 16px;
+	border: 1px solid #BE5152;
+	padding: 5px 8px;
+}
 
 
 /*===============================================
@@ -1057,23 +1073,70 @@ Smartphone :  画面の横幅が640pxまで
 	}
 
 /* event-------------------- */
+#event .main {
+	width: 100%;
+}
+#event h3 {
+	margin-left: 8px;
+}
 #event dl, #event dt, #event dd {
 	display: block;
 
 }
+.all_event dl {
+  margin-left: 0px;
+}
 .all_event dl dd {
 	margin-top: -1.6em;
-	padding: 0 0 10px 8em;
+	padding: 0 0 0px 5em;
 	text-indent: -1em;
+	font-size: 1rem;
+}
+#event dt {
+	font-size: 1rem;
+	margin-left: 3px;
 }
 
 .all_event td {
-	padding: 10px 0px;
-	margin: 10px 0px;
+	padding: 5px 0px;
+
 }
 #event .pc-only {
 	display: none;
 }
+
+.all_event h5 {
+    font-size: 1.3rem;
+    padding-top: 2px;
+		margin-bottom: 12px;
+}
+
+#event tbody, #event table, #event tr, #event th, #event td {
+	display: revert;
+}
+.all_event th {
+	padding: 0px;
+	width: 30%;
+}
+#event td .btn {
+	margin-top: 0px;
+    line-height: 3;
+    padding: 0 17px;
+    height: 38px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    display: block;
+    margin: 6px auto;
+    min-width: 150px;
+    max-width: 163px;
+}
+
+.tagu {
+    font-size: 1rem;
+    padding: 2px 4px;
+		background-color: #fff;
+}
+
 
 
 /* institution-index-------------------- */
@@ -1116,7 +1179,9 @@ Smartphone :  画面の横幅が640pxまで
 	#mini td {
 		width: 10%;
 }
-
+.tagu_wrap {
+	text-align: center;
+}
 /* フロア図の設定 */
 #foor-zu h5.floortitle {
 	width: 100%;
